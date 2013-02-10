@@ -4,7 +4,8 @@ dictionary = {
 "verb" : ['go', 'kill', 'eat'],
 "stop" : ['the', 'in', 'of'],
 "noun" : ['bear', 'princess'],
-"car" : ['lambo', 'corvette', 'miata', 'fit', 'civic']
+"car" : ['lambo', 'corvette', 'miata', 'fit', 'civic'],
+"family" : ['mom', 'dad', 'brother', 'sister']
 
 }
 
