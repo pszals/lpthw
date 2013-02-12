@@ -1,0 +1,31 @@
+Why won't this work?
+
+def secret_formula(started):
+    jelly_beans = started * 500
+    jars = jelly_beans / 1000
+    crates = jars / 100
+    return jelly_beans, jars, crates
+
+print "We'd have %d beans, %d jars, and %d crates %s." % (
+	secret_formula(start_point), 'extra')
+	
+Error:
+
+Traceback (most recent call last):
+  File "ex24.py", line 50, in <module>
+    secret_formula(start_point), 'extra')
+TypeError: %d format: a number is required, not tuple
+
+But this does work:
+
+def secret_formula(started):
+    jelly_beans = started * 500
+    jars = jelly_beans / 1000
+    crates = jars / 100
+    return jelly_beans, jars, crates
+
+start_point = 10000
+beans, jars, crates = secret_formula(start_point)
+
+print "We'd have %d beans, %d jars, and %d crates %s." % (
+	beans, jars, crates, 'extra')

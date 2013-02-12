@@ -1,0 +1,1 @@
+pydoc opens up the information on python, otherwise known as a documentation module

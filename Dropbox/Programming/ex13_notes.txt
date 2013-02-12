@@ -1,0 +1,4 @@
+I'm not quite understanding the relationship between the number of command line arguments
+and the output of arguments, especially in the extra13.py file
+
+Apparently, the first argument is always the script name, and gets counted as an argument
