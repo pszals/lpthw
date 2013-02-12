@@ -1,0 +1,3 @@
+Cannot make Unicode print in terminal
+
+Cannot make Zed's "fun" little code stop the loop

@@ -1,0 +1,13 @@
+Defining lots of functions within a module
+
+""" - These are now also called documentation comments and can be used
+		to leave comments  similar to those found in the pydoc help
+	- In order to access them one must first import the file (ex25), then
+		you can type 'help(ex25)' and all of the comments show up
+
+import * - This will import all functions within the defined module, that way
+			you do not have to type module.function() every time you want to
+			use a function; can leave off the module and just use function()
+			i.e. 'from ex25 import *' 
+CTRL-D - quits python, can also enter function 'quit()' and hit return
+			(CTRL-Z on Windows)

@@ -1,0 +1,64 @@
+Study Drills
+
+1.) range - creates a list in arithmetic progression
+	range(x) - creates a list from 0 - (x - 1)
+		i.e. range(4) >>> [0, 1, 2, 3]
+	range(start, stop[, step] - creates list from start to closest number to
+		stop in increments of step.
+2.) I feel like you should be able to avoid the for-loop on line 25 and just assign
+	range(0, 6) to elements, but I'm not sure why not? YES YOU CAN! I had added
+	brackets [] around range which listed my list or something like that
+3.) You can do all sorts of things to lists!
+
+	list() >>> new list
+	list(sequence) >>> new list initialized from sequence's items
+	
+	__add__(...)
+		x.__add__(y) >>> x + y
+	
+	__contains__(...)
+		.x__contains__(y) >>> y in x
+	
+	__delitem__(...)
+		x.__delitem__(y) >>> del x[y]
+	
+	__delslice__(...)
+		x.__delslice__(i, j) >>> del x[i:j]
+	
+		Use of negative indices is not supported.
+	__eq__(...)
+		x.__eq__(y) >>> x == y
+	
+	__ge__(...)
+		x.__ge__(y) >>> x >= y
+	
+	__getattribute__(...)
+		x.__getattribute__('name') >>> x.name
+		
+	__getitem__(...)
+		x.__getitem__(y) >>> x[y]
+	
+	__getslice__(...)
+		x.__getslice__(i, j) >>> x[i:j]
+		
+		Use of negative indices is not supported.
+	__gt__(...)
+		x.__gt__(y) >>> x > y
+	
+	__iadd__(...)
+		x.__iadd__(y) >>> x += y
+	
+	__imul__(...)
+		x.__imul__(y) >>> x *= y (>>> x = x * y)
+	
+	__init__(...)
+		x.__init__(...) initializes x; see x.__class__.__doc__ for signature
+	
+	__iter__(...)
+		x.__iter__() >>> iter(x)
+	
+	__le__(...)
+		x.__le__(y) >>>x <= y
+	
+	__len__(...)
+		x.__len__() >>> len(x)
