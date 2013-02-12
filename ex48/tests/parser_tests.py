@@ -21,3 +21,8 @@ def test_parse_verb():
 	word_list = [('verb', 'go'), ('stop', 'the')]
 	assert_equal(parser.parse_verb(word_list), ('verb', 'go'))
 
+def test_parse_object():
+	direction = [('direction', 'north')]
+	noun = [('noun', 'epee')]
+	assert_equal(parser.parse_object(direction), ('direction', 'north'))
+	assert_equal(parser.parse_object(noun), ('noun', 'epee'))
