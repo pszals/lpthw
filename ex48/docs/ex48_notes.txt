@@ -1,0 +1,14 @@
+Exercise 48 - Dictionaries, Tuples, and Lists
+
+Scanner should:
+
+scan list for a word *input.split()* that matches an item in dictionary
+
+list = []
+
+if word matches item in list, create a tuple and add to list[] 
+with list.append((key, item))
+
+except ValueError:
+	return None 
+	list.append((error, item_causing_error))
