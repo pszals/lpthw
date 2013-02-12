@@ -27,16 +27,16 @@ def test_parse_object():
 	assert_equal(parser.parse_object(direction), ('direction', 'north'))
 	assert_equal(parser.parse_object(noun), ('noun', 'epee'))
 	
-def test_subject():
+def test_parse_subject():
 	subject = ('noun', 'bear')
 	verb = ('verb', 'eats')
 	obj = ('noun', 'honey')
 	
-	word_list = [('verb', 'eats'),
-				 ('noun', 'honey')
-				 ]
-	
-	assert_equal(parser.parse_subject(word_list, ('noun', 'bear')), "bear eats honey")
+	word_list = [('verb', 'eats'), ('noun', 'honey')]
+	result = parser.parse_subject(word_list, subject)
+	assert_equal(result.subject, 'bear')
+	assert_equal(result.verb, 'eats')
+	assert_equal(result.object, 'honey')
 	
 
 	
