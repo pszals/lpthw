@@ -8,5 +8,6 @@ def test_peek():
 	result = parser.peek(word_list)
 	assert_equal(result, 'alpha')
 	
-
+def test_match():
+	assert_equal(parser.match(word_list, 'alpha'), ('alpha', 'letter_a'))
 	
