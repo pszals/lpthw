@@ -11,3 +11,5 @@ def test_peek():
 def test_match():
 	assert_equal(parser.match(word_list, 'alpha'), ('alpha', 'letter_a'))
 	
+def test_skip():
+	assert_equal(parser.skip(word_list, 'alpha'), None)

@@ -41,7 +41,7 @@ def parse_object(word_list):
 	skip(word_list, 'stop')
 	next = peek(word_list)
 	
-def pars_object(word_list):
+def parse_object(word_list):
 	skip(word_list, 'stop')
 	next = peek(word_list)
 	
