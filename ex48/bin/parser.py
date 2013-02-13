@@ -41,10 +41,6 @@ def parse_object(word_list):
 	skip(word_list, 'stop')
 	next = peek(word_list)
 	
-def parse_object(word_list):
-	skip(word_list, 'stop')
-	next = peek(word_list)
-	
 	if next == 'noun':
 		return match(word_list, 'noun')
 	if next == 'direction':
