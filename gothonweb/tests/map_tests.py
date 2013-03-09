@@ -1,5 +1,5 @@
 from nose.tools import *
-from bin.map import Room
+from bin.map import *
 
 def test_room():
 	gold = Room("GoldRoom",
@@ -29,3 +29,11 @@ def test_map():
 	assert_equal(start.go('west'), west)
 	assert_equal(start.go('west').go('east'), start)
 	assert_equal(start.go('down').go('up'), start)
+
+def test_gothon_game_map():
+	assert_equal(START.go('N'), generic_death)
+	assert_equal(START.go('Y'), laser_weapon_armory)
+	assert_equal(laser_weapon_armory.go('*'), generic_death)
+	assert_equal(laser_weapon_armory.go('7'), the_bridge)
+	assert_equal(the_bridge.go('Y'), escape_pod)
+	assert_equal(the_bridge.go('*'), generic_death)
