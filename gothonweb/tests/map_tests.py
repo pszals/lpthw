@@ -37,3 +37,5 @@ def test_gothon_game_map():
 	assert_equal(laser_weapon_armory.go('7'), the_bridge)
 	assert_equal(the_bridge.go('Y'), escape_pod)
 	assert_equal(the_bridge.go('*'), generic_death)
+	assert_equal(generic_death.go('Y'), central_corridor)
+	assert_equal(generic_death.go('*'), exit)

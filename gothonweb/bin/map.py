@@ -1,3 +1,5 @@
+from sys import exit
+
 class Room(object):
 
 	def __init__(self, name, description):
@@ -49,6 +51,13 @@ Congratulations. GAME OVER.
 """)
 
 generic_death = Room("death", "You have died. Womp womp.")
+
+retry = Room("retry", "Retry? Y/N")
+
+generic_death.add_paths({
+	'Y': central_corridor,
+	'*': exit
+})
 
 the_bridge.add_paths({
 	'Y': escape_pod,
