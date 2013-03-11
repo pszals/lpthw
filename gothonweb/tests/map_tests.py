@@ -32,10 +32,14 @@ def test_map():
 
 def test_gothon_game_map():
 	assert_equal(START.go('N'), generic_death)
+	assert_equal(START.go('n'), generic_death)
+	assert_equal(START.go('y'), laser_weapon_armory)
 	assert_equal(START.go('Y'), laser_weapon_armory)
 	assert_equal(laser_weapon_armory.go('*'), generic_death)
 	assert_equal(laser_weapon_armory.go('7'), the_bridge)
 	assert_equal(the_bridge.go('Y'), escape_pod)
+	assert_equal(the_bridge.go('y'), escape_pod)
 	assert_equal(the_bridge.go('*'), generic_death)
 	assert_equal(generic_death.go('Y'), central_corridor)
+	assert_equal(generic_death.go('y'), central_corridor)
 	assert_equal(generic_death.go('*'), exit)
