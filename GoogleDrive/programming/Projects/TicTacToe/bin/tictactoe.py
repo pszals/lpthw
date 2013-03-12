@@ -10,16 +10,16 @@ def print_board(board):
 print_board(board) 
 
 def place_x():
-	row = int(raw_input("Row: "))
-	col = int(raw_input("Column: "))
+	row = int(raw_input("Row: ")) - 1
+	col = int(raw_input("Column: ")) - 1
 	
-	if board[row][col] != "_" and (board[row][col] != "X") and (
-													board[row][col] != "O"):
+	
+	
+	if (board[row][col] != "X") and (board[row][col] != "O"):
 		board[row][col] = "X"
-	print board
+	else:
+		print "Something is wrong"
+	print_board(board)
 
 place_x()
 
-
-
-																
